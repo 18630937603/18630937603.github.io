@@ -1,3 +1,5 @@
+const Path = require('path')
+
 module.exports = {
     pwa: {
         workboxOptions: {
@@ -15,6 +17,7 @@ module.exports = {
         msTileColor: {
             default: '#000000'
         }
-    }
+    },
+    outputDir: 'docs'
 }
 
