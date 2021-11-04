@@ -45,7 +45,7 @@ export default defineComponent({
           navigator.serviceWorker.ready.then(registration=>{
             registration.showNotification('我是通知的标题',{
               body: '我是通知的内容',
-              icon: './img/icons/favicon-16x16.png'
+              icon: './img/icons/android-chrome-512x512.png'
             })
           })
         },2000)
