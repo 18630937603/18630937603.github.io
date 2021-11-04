@@ -15,7 +15,7 @@ importScripts("/js/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/js/workbox-v4.3.1"});
 
 importScripts(
-  "/js/precache-manifest.6318202d74c8680e0a5f3608f61d862e.js"
+  "/js/precache-manifest.891ee1533366e7c6e4b0501f71a2bdab.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pwa-test"});

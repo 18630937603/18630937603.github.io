@@ -36,20 +36,14 @@ export default defineComponent({
     }
 
     function notify() {
-      if(!Notification) {
-        alert('您的浏览器不支持通知')
-      }else if(Notification.permission!=='granted'){
-        alert('您拒绝了通知权限')
-      } else {
-        setTimeout(() => {
-          navigator.serviceWorker.ready.then(registration=>{
-            registration.showNotification('我是通知的标题',{
-              body: '我是通知的内容',
-              icon: './img/icons/android-chrome-512x512.png'
-            })
+      setTimeout(() => {
+        navigator.serviceWorker.ready.then(registration=>{
+          registration.showNotification('我是通知的标题',{
+            body: '我是通知的内容',
+            icon: './img/icons/android-chrome-512x512.png'
           })
-        },2000)
-      }
+        })
+      },2000)
     }
 
     function askForPermission() {
